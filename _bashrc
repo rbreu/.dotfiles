@@ -1,0 +1,54 @@
+#test -s ~/.alias && . ~/.alias || true
+
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
+#if [ -f ~/unicore/ucc_bash_completion/ucc_bash_completion.sh ]; then
+#    . ~/unicore/ucc_bash_completion/ucc_bash_completion.sh
+#fi
+
+
+if [ -f ~/bin/acd_func.sh ]; then
+    . ~/bin/acd_func.sh
+fi
+
+
+
+#export PS1="\u@\h:\W> "
+case $TERM in
+    mlterm*|xterm*|rxvt-unicode*)
+	PS1="\[\033];\u@\h:\w\a\]\[\033[34m\]\u@\h:\W> \[\033[39m\]"
+	;;
+    linux)
+	PS1="\[\033[34m\]\u@\h:\W> \[\033[39m\]"
+	sudo loadkeys ~/.linux_keys
+	;;
+    *)
+	PS1="\[\033[34m\]\u@\h:\W> \[\033[39m\]"
+esac
+
+export PATH=/home/rbreu/bin:$PATH
+
+#This is for java:
+#export CLASSPATH=.:/usr/share/java
+#export ANT_HOME=usr/share/ant
+#export JAVA_HOME=/usr/lib/jvm/java-1.5.0-sun/jre
+
+export BROWSER=epiphany
+export EDITOR=em
+export PRINTER=zam11
+export PYTHONSTARTUP=~/.pythonrc.py
+export OOO_FORCE_DESKTOP=gnome
+
+# bash:
+export HISTCONTROL="erasedups:ignoreboth"
+
+
+alias ls="ls --color=auto"
+alias qemu="export SDL_VIDEO_X11_DGAMOUSE=0; qemu" #SDL_MOUSE_RELATIVE=0
+alias nexuiz="export SDL_VIDEO_X11_DGAMOUSE=0; nexuiz"
+alias dosbox="export SDL_VIDEO_X11_DGAMOUSE=0; dosbox"
+alias ipython="ipython -colors LightBG"
+alias blender25="/home/rbreu-nb/blender_trunk/install/linux2/blender"
+alias irbtc="irb -r 'irb/completion'"

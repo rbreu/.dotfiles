@@ -1,0 +1,8 @@
+clear Lock
+add Control = Caps_Lock
+
+keycode 171 = XF86AudioNext
+keycode 172 = XF86AudioPlay
+keycode 173 = XF86AudioPrev
+keycode 174 = XF86AudioLowerVolume
+keycode 176 = XF86AudioRaiseVolume

@@ -1,0 +1,33 @@
+#font 5x7
+font 6x10
+#font 7x13
+#font 8x13
+#font 9x15
+#font *mintsmild.se*
+#font -*-*-*-*-*-*-8-*-*-*-*-*-*-*
+
+#Antialias
+#xftfont -*-*-*-*-*-*-14-*-*-*-*-*-*-*
+#use_xft yes
+#xftalpha 0.8
+
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+#own_window_colour black
+double_buffer yes
+
+default_color black
+default_shade_color black
+default_outline_color white
+draw_shades no
+
+
+TEXT
+Battery: ${battery}${tab 40}Volume: ${ibm_volume}
+Load: ${loadavg 1} Temperature: ${ibm_temps 0} ${ibm_temps 1} DiskIO: ${diskio} 
+Memory:  ${membar 6,150} ${mem}
+Swap:    ${swapbar 6,150} ${swap}
+CPU:     ${cpubar 6,150} ${cpu}% ${freq 1} ${freq 2}
+eth0: ${downspeed eth0} - ${upspeed eth0}${tab 50}wlan0: ${downspeed wlan0} - ${upspeed wlan0}
+Weather Juelich: ${texeci 600 /home/rbreu/bin/wetter_juelich.py}

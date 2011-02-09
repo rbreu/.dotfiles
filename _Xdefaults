@@ -1,0 +1,31 @@
+/*emacs*font: -etl-fixed-medium-r-normal-*-16-*-*-*-*-*-*-* */
+/*emacs*font: xft:DejaVu Sans Mono:size=10*/
+/*emacs*font: -unknown-DejaVu Sans Mono-normal-normal-normal-*-11-*-*-*-*-8-**/
+/*emacs*font: DejaVu Sans Mono-11*/
+emacs*font: DejaVu Sans Mono-11
+/*emacs*toolBar:			off */
+
+/* Emacs.mode-line.attributeForeground: white */
+/* Emacs.mode-line.attributeBackground: black */
+
+
+XTerm*foreground:	black
+XTerm*background:	white
+XTerm*font: -etl-fixed-medium-r-normal-*-14-*-*-*-*-*-*-*
+XTerm*scrollBar:	on
+
+XClock*analog:  on
+XClock*background: black
+XClock*foreground: white
+XClock*hands: white
+XClock*highlight: white
+
+/* URxvt*font: -etl-fixed-medium-r-normal-*-14-*-*-*-*-*-*-* */
+URxvt*font: xft:DejaVu Sans Mono:size=10
+URxvt*transparent: on
+URxvt*shading: 150
+URxvt*visualBell: on
+/*URxvt*scrollBar: off*/
+URxvt*scrollstyle: plain
+URxvt*termName: xterm
+URxvt*tripleclickwords: off
