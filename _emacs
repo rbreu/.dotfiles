@@ -294,8 +294,8 @@
 (setq ispell-dictionary "en_GB-ise-w_accents")
 
 
-(setq browse-url-browser-function 'browse-url-epiphany)
-(setq browse-url-epiphany-new-window-is-tab t)  
+(setq browse-url-browser-function 'browse-url-firefox)
+(setq browse-url-firefox-new-window-is-tab t)
 
 ;;; Local Variables: 
 ;;; mode: emacs-lisp

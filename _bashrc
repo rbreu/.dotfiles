@@ -35,8 +35,8 @@ export PATH=/home/rbreu/bin:$PATH
 #export ANT_HOME=usr/share/ant
 #export JAVA_HOME=/usr/lib/jvm/java-1.5.0-sun/jre
 
-export BROWSER=epiphany
-export EDITOR=em
+export BROWSER=iceweasel
+export EDITOR=emc
 export PRINTER=zam11
 export PYTHONSTARTUP=~/.pythonrc.py
 export OOO_FORCE_DESKTOP=gnome
